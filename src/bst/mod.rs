@@ -1,8 +1,12 @@
 
 
 
+#![allow(dead_code)]
+#![allow(unused_variables)]
 
 pub mod search_tree;
+pub mod array_to_bst;
+
 use std::rc::Rc;
 use std::cell::RefCell;
 
