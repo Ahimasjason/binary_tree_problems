@@ -22,8 +22,8 @@ impl <T: Copy> Node <T> {
 
 
 #[derive(Debug)]
-struct Tree<T: Copy>{
-    root : Option<Box<Node<T>>>
+pub(crate) struct Tree<T: Copy>{
+    pub root : Option<Box<Node<T>>>
 }
 
 impl<T> Tree <T> 
@@ -32,7 +32,7 @@ impl<T> Tree <T>
 
 {
 
-    fn new() -> Self {
+    pub fn new() -> Self {
         Self { root: None }
     }
 
@@ -142,7 +142,7 @@ impl<T> Tree <T>
             }
         }
     }
-    fn insert(&mut self, key : T) {
+    pub fn insert(&mut self, key : T) {
 
        let r = std::mem::replace(&mut self.root, None);
 

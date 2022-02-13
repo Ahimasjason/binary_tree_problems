@@ -6,6 +6,8 @@
 
 pub mod search_tree;
 pub mod array_to_bst;
+pub mod min_swaps;
+pub mod unbalanced_to_balanced;
 
 use std::rc::Rc;
 use std::cell::RefCell;
